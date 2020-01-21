@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "materialize";
+
+ .no-overw{
+     background: green;
+     color: white   ;
+ }
+
+ .pagination *{
+     padding: 10px;
+ }

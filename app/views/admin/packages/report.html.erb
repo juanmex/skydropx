@@ -1,0 +1,26 @@
+<div>
+    <%= link_to "Subir archivo", new_admin_package_path, :class => "btn" %>
+    <table>
+        <thead>
+            <tr>
+                <th>Tracking number</th>
+                <th>Label total weight</th>
+                <th>Label weight</th>
+                <th>Fedex total weight</th>
+                <th>Overweight</th>
+            </tr>
+        </thead>
+        <tbody>
+        <% @packages.each do |package| %>
+        <tr class="<%= package.overweight < 0 ? "no-overw" : "" %>">
+        <td><%= package.tracking_number %></td>
+        <td><%= package.package_total_weight.round(2) %></td>
+        <td><%= package.package_label_weight %></td>
+        <td><%= package.fedex_total_weight.round(2) %></td>
+        <td><%= package.overweight.round(2) %></td>
+        </tr>
+        <% end %>
+        </tbody>
+    </table>
+    <%= will_paginate @packages %>
+</div>
