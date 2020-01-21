@@ -1,25 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ejercicio de programación  https://www.skydropx.com/:
 
-Things you may want to cover:
+* Para poder generar un reporte es necesario iniciar sesión, se implementó la gema devise para verificar que un usuario ha iniciado sesión
 
-* Ruby version
+* Para generar un reporte es necesario subir un archivo Json
 
-* System dependencies
+* Hay dos specs para las pruebas unitarias esta en la ruta specs/
 
-* Configuration
+* Por buenas prácticas no acostumbro versionar database.yml ni local_env.yml pero al ser un ejercicio de prueba versioné los archivos para que pueda ejecutarse sin problemas
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Me hubiese gustado optimizar el tracking con la gema de fedex pero no encotré como trackear múltiples paquetes con un arreglo de "tracking numbers"
 
 * ...
 # skydropx
